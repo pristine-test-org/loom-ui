@@ -130,8 +130,8 @@ components:
     backgroundColor: "{colors.surface}"
     borderColor: "{colors.border}"
     rounded: "{rounded.lg}"
-    padding: "{spacing.5}"
-    shadow: "{elevation.sm}"
+    padding: "{spacing.6}"
+    shadow: "{elevation.md}"
   input:
     backgroundColor: "{colors.surface}"
     textColor: "{colors.text}"
@@ -215,8 +215,8 @@ and up.
 Radius: `sm` for small inner parts, `md` for controls, `lg` for containers
 (cards, dialogs), `pill` for badges.
 
-Elevation is soft and single-layered. Cards sit at `shadow-sm` with a hairline
-border, toasts at `shadow-md`, dialogs at `shadow-lg`. Nothing nests shadows.
+Elevation is soft and single-layered. Cards and toasts sit at `shadow-md` with a
+hairline border, dialogs at `shadow-lg`. Nothing nests shadows.
 
 ## Components
 
@@ -224,8 +224,8 @@ border, toasts at `shadow-md`, dialogs at `shadow-lg`. Nothing nests shadows.
   `lg`. Secondary is a white surface with a `border-strong` edge and `text`
   ink. A `loading` state swaps the leading icon for a spinner.
 - **Card**: optional eyebrow, title, description, body and footer. `raised`
-  (hairline and `shadow-sm`) or `outlined` (a `border-strong` edge, no shadow).
-  Padding is `space-5`.
+  (hairline and `shadow-md`) or `outlined` (a `border-strong` edge, no shadow).
+  Padding is `space-6`.
 - **Badge**: a pill in five tones: neutral, accent, success, warning, danger.
   An optional dot for live status.
 - **Input**: label above, hint or error below, linked with
