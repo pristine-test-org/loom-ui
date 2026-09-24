@@ -33,7 +33,7 @@
   --loom-indigo-300: #96a2e4;
   --loom-indigo-400: #6f7ed7;
   --loom-indigo-500: #4f5fc6;
-  --loom-indigo-600: #3d4aab;
+  --loom-indigo-600: #4b3fb8;
   --loom-indigo-700: #323c8b;
   --loom-indigo-800: #28306c;
   --loom-indigo-900: #1c2249;
@@ -109,12 +109,12 @@
 
   --loom-space-1: 0.25rem;  /* 4px */
   --loom-space-2: 0.5rem;   /* 8px */
-  --loom-space-3: 0.75rem;  /* 12px */
+  --loom-space-3: 0.625rem; /* 10px */
   --loom-space-4: 1rem;     /* 16px */
-  --loom-space-5: 1.5rem;   /* 24px */
-  --loom-space-6: 2rem;     /* 32px */
-  --loom-space-7: 3rem;     /* 48px */
-  --loom-space-8: 4rem;     /* 64px */
+  --loom-space-5: 1.25rem;  /* 20px */
+  --loom-space-6: 1.75rem;  /* 28px */
+  --loom-space-7: 2.5rem;   /* 40px */
+  --loom-space-8: 3.5rem;   /* 56px */
 
   /* ---------- Radius ---------- */
 
