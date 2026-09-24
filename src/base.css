@@ -1,0 +1,22 @@
+/* Minimal base: the library sets type and colour on the page it is mounted in. */
+
+body {
+  margin: 0;
+  background: var(--loom-color-bg);
+  color: var(--loom-color-text);
+  font-family: var(--loom-font-sans);
+  font-size: var(--loom-text-md);
+  line-height: var(--loom-leading-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--loom-color-focus);
+  outline-offset: 2px;
+}

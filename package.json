@@ -1,0 +1,51 @@
+{
+  "name": "@loom-ui/react",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Loom: a small, token-driven React component library.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/loom-ui.js",
+  "module": "./dist/loom-ui.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/loom-ui.js"
+    },
+    "./style.css": "./dist/loom-ui.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@storybook/addon-docs": "^10.6.0",
+    "@storybook/react-vite": "^10.6.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "storybook": "^10.6.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1"
+  }
+}

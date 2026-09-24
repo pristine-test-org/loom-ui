@@ -1,0 +1,93 @@
+.region {
+  position: fixed;
+  right: var(--loom-space-5);
+  bottom: var(--loom-space-5);
+  z-index: 50;
+  display: grid;
+  gap: var(--loom-space-3);
+  width: min(24rem, calc(100vw - var(--loom-space-6)));
+}
+
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--loom-space-3);
+  padding: var(--loom-space-3) var(--loom-space-3) var(--loom-space-3) var(--loom-space-4);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--loom-color-border);
+  border-radius: var(--loom-radius-md);
+  background: var(--loom-color-surface);
+  color: var(--loom-color-text);
+  font-family: var(--loom-font-sans);
+  box-shadow: var(--loom-shadow-md);
+}
+
+.stripe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+}
+
+.info .stripe {
+  background: var(--loom-color-accent);
+}
+
+.success .stripe {
+  background: var(--loom-color-success);
+}
+
+.warning .stripe {
+  background: var(--loom-color-warning);
+}
+
+.danger .stripe {
+  background: var(--loom-color-danger);
+}
+
+.content {
+  flex: 1;
+  display: grid;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--loom-text-sm);
+  font-weight: var(--loom-weight-semibold);
+  line-height: var(--loom-leading-tight);
+}
+
+.description {
+  margin: 0;
+  font-size: var(--loom-text-sm);
+  color: var(--loom-color-text-muted);
+}
+
+.action {
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.dismiss {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  border-radius: var(--loom-radius-sm);
+  background: transparent;
+  color: var(--loom-color-text-faint);
+  font-size: var(--loom-text-lg);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dismiss:hover {
+  background: var(--loom-color-surface-sunk);
+  color: var(--loom-color-text);
+}

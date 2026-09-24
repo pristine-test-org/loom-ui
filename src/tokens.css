@@ -1,0 +1,179 @@
+/*
+ * Loom design tokens.
+ *
+ * This file is the source of truth. DESIGN.md mirrors every value here; if a
+ * token changes in this file, change it there in the same commit.
+ *
+ * Two layers: raw scales (--loom-neutral-*, --loom-indigo-*, ...) and semantic
+ * tokens (--loom-color-*). Components only ever read semantic tokens, so the
+ * dark theme is a swap of the semantic layer and nothing else.
+ */
+
+:root {
+  /* ---------- Colour scales ---------- */
+
+  /* Neutral: a warm "linen" grey */
+  --loom-neutral-0: #ffffff;
+  --loom-neutral-50: #f8f7f4;
+  --loom-neutral-100: #f0eee9;
+  --loom-neutral-200: #e3e0d8;
+  --loom-neutral-300: #cdc8bd;
+  --loom-neutral-400: #a39d91;
+  --loom-neutral-500: #716b5f;
+  --loom-neutral-600: #5c574d;
+  --loom-neutral-700: #443f37;
+  --loom-neutral-800: #2c2924;
+  --loom-neutral-900: #1b1916;
+  --loom-neutral-950: #11100e;
+
+  /* Indigo: the accent thread */
+  --loom-indigo-50: #eef0fb;
+  --loom-indigo-100: #dde1f7;
+  --loom-indigo-200: #bcc4ef;
+  --loom-indigo-300: #96a2e4;
+  --loom-indigo-400: #6f7ed7;
+  --loom-indigo-500: #4f5fc6;
+  --loom-indigo-600: #3d4aab;
+  --loom-indigo-700: #323c8b;
+  --loom-indigo-800: #28306c;
+  --loom-indigo-900: #1c2249;
+
+  /* Status */
+  --loom-green-50: #ebf6ef;
+  --loom-green-300: #7fc79b;
+  --loom-green-600: #23754a;
+  --loom-green-700: #1c5e3b;
+  --loom-amber-50: #fcf4e2;
+  --loom-amber-300: #e8b75a;
+  --loom-amber-600: #9a5f06;
+  --loom-amber-700: #7c4c05;
+  --loom-red-50: #fcefed;
+  --loom-red-300: #ec8f86;
+  --loom-red-600: #b3302a;
+  --loom-red-700: #922620;
+
+  /* ---------- Semantic colour (light) ---------- */
+
+  --loom-color-bg: var(--loom-neutral-50);
+  --loom-color-surface: var(--loom-neutral-0);
+  --loom-color-surface-sunk: var(--loom-neutral-100);
+  --loom-color-text: var(--loom-neutral-900);
+  --loom-color-text-muted: var(--loom-neutral-600);
+  --loom-color-text-faint: var(--loom-neutral-500);
+  --loom-color-border: var(--loom-neutral-200);
+  --loom-color-border-strong: var(--loom-neutral-300);
+
+  --loom-color-accent: var(--loom-indigo-600);
+  --loom-color-accent-hover: var(--loom-indigo-700);
+  --loom-color-accent-subtle: var(--loom-indigo-50);
+  --loom-color-accent-text: var(--loom-indigo-700);
+  --loom-color-on-accent: var(--loom-neutral-0);
+  --loom-color-focus: var(--loom-indigo-500);
+
+  --loom-color-success: var(--loom-green-600);
+  --loom-color-success-subtle: var(--loom-green-50);
+  --loom-color-success-text: var(--loom-green-700);
+  --loom-color-warning: var(--loom-amber-600);
+  --loom-color-warning-subtle: var(--loom-amber-50);
+  --loom-color-warning-text: var(--loom-amber-700);
+  --loom-color-danger: var(--loom-red-600);
+  --loom-color-danger-hover: var(--loom-red-700);
+  --loom-color-danger-subtle: var(--loom-red-50);
+  --loom-color-on-danger: var(--loom-neutral-0);
+  --loom-color-danger-text: var(--loom-red-700);
+
+  --loom-color-overlay: rgb(17 16 14 / 0.48);
+
+  /* ---------- Typography ---------- */
+
+  --loom-font-sans: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --loom-font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --loom-text-xs: 0.75rem;    /* 12px: badges, meta */
+  --loom-text-sm: 0.875rem;   /* 14px: controls, help text */
+  --loom-text-md: 1rem;       /* 16px: body */
+  --loom-text-lg: 1.125rem;   /* 18px: card titles */
+  --loom-text-xl: 1.375rem;   /* 22px: dialog titles */
+  --loom-text-2xl: 1.75rem;   /* 28px: section headings */
+  --loom-text-3xl: 2.25rem;   /* 36px: page headings */
+
+  --loom-weight-regular: 400;
+  --loom-weight-medium: 500;
+  --loom-weight-semibold: 600;
+
+  --loom-leading-tight: 1.25;
+  --loom-leading-normal: 1.5;
+  --loom-tracking-tight: -0.01em;
+
+  /* ---------- Spacing (4px base) ---------- */
+
+  --loom-space-1: 0.25rem;  /* 4px */
+  --loom-space-2: 0.5rem;   /* 8px */
+  --loom-space-3: 0.75rem;  /* 12px */
+  --loom-space-4: 1rem;     /* 16px */
+  --loom-space-5: 1.5rem;   /* 24px */
+  --loom-space-6: 2rem;     /* 32px */
+  --loom-space-7: 3rem;     /* 48px */
+  --loom-space-8: 4rem;     /* 64px */
+
+  /* ---------- Radius ---------- */
+
+  --loom-radius-sm: 4px;
+  --loom-radius-md: 8px;
+  --loom-radius-lg: 12px;
+  --loom-radius-pill: 999px;
+
+  /* ---------- Shadows ---------- */
+
+  --loom-shadow-sm: 0 1px 2px rgb(27 25 22 / 0.06), 0 1px 1px rgb(27 25 22 / 0.04);
+  --loom-shadow-md: 0 4px 12px rgb(27 25 22 / 0.08), 0 1px 3px rgb(27 25 22 / 0.06);
+  --loom-shadow-lg: 0 16px 40px rgb(27 25 22 / 0.14), 0 4px 12px rgb(27 25 22 / 0.08);
+
+  /* ---------- Motion ---------- */
+
+  --loom-duration-fast: 120ms;
+  --loom-duration-normal: 200ms;
+  --loom-ease: cubic-bezier(0.2, 0, 0, 1);
+
+  color-scheme: light;
+}
+
+/* ---------- Dark theme: a swap of the semantic layer ---------- */
+
+[data-theme="dark"] {
+  --loom-color-bg: var(--loom-neutral-950);
+  --loom-color-surface: var(--loom-neutral-900);
+  --loom-color-surface-sunk: #0b0a09;
+  --loom-color-text: var(--loom-neutral-50);
+  --loom-color-text-muted: var(--loom-neutral-300);
+  --loom-color-text-faint: var(--loom-neutral-400);
+  --loom-color-border: var(--loom-neutral-800);
+  --loom-color-border-strong: var(--loom-neutral-700);
+
+  --loom-color-accent: var(--loom-indigo-300);
+  --loom-color-accent-hover: var(--loom-indigo-200);
+  --loom-color-accent-subtle: rgb(111 126 215 / 0.16);
+  --loom-color-accent-text: var(--loom-indigo-200);
+  --loom-color-on-accent: var(--loom-indigo-900);
+  --loom-color-focus: var(--loom-indigo-300);
+
+  --loom-color-success: var(--loom-green-300);
+  --loom-color-success-subtle: rgb(127 199 155 / 0.14);
+  --loom-color-success-text: var(--loom-green-300);
+  --loom-color-warning: var(--loom-amber-300);
+  --loom-color-warning-subtle: rgb(232 183 90 / 0.14);
+  --loom-color-warning-text: var(--loom-amber-300);
+  --loom-color-danger: var(--loom-red-300);
+  --loom-color-danger-hover: #f3aba3;
+  --loom-color-danger-subtle: rgb(236 143 134 / 0.14);
+  --loom-color-on-danger: var(--loom-neutral-950);
+  --loom-color-danger-text: var(--loom-red-300);
+
+  --loom-color-overlay: rgb(0 0 0 / 0.64);
+
+  --loom-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --loom-shadow-md: 0 4px 12px rgb(0 0 0 / 0.44), 0 1px 3px rgb(0 0 0 / 0.3);
+  --loom-shadow-lg: 0 16px 40px rgb(0 0 0 / 0.56), 0 4px 12px rgb(0 0 0 / 0.36);
+
+  color-scheme: dark;
+}
