@@ -1,7 +1,7 @@
 /* Minimal base: the library sets type and colour on the page it is mounted in. */
 
 body {
-  margin: 0;
+  margin: 4px;
   background: var(--loom-color-bg);
   color: var(--loom-color-text);
   font-family: var(--loom-font-sans);
