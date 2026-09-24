@@ -1,0 +1,76 @@
+.avatar {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: var(--loom-radius-pill);
+  background: var(--loom-color-accent-subtle);
+  color: var(--loom-color-accent-text);
+  font-family: var(--loom-font-sans);
+  font-weight: var(--loom-weight-semibold);
+  line-height: 1;
+  user-select: none;
+}
+
+.sm {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: var(--loom-text-xs);
+}
+
+.md {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: var(--loom-text-sm);
+}
+
+.lg {
+  width: 3rem;
+  height: 3rem;
+  font-size: var(--loom-text-lg);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.status {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 28%;
+  height: 28%;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  border: 2px solid var(--loom-color-surface);
+  border-radius: var(--loom-radius-pill);
+}
+
+.online {
+  background: var(--loom-color-success);
+}
+
+.away {
+  background: var(--loom-color-warning);
+}
+
+.group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.stacked {
+  box-shadow: 0 0 0 2px var(--loom-color-surface);
+}
+
+.stacked + .stacked {
+  margin-left: calc(var(--loom-space-2) * -1);
+}
+
+.more {
+  background: var(--loom-color-surface-sunk);
+  color: var(--loom-color-text-muted);
+}

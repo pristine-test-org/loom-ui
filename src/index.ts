@@ -15,5 +15,7 @@ export { Dialog } from './components/Dialog/Dialog';
 export type { DialogProps } from './components/Dialog/Dialog';
 export { Tabs } from './components/Tabs/Tabs';
 export type { TabsProps, TabItem } from './components/Tabs/Tabs';
+export { Avatar, AvatarGroup } from './components/Avatar/Avatar';
+export type { AvatarProps, AvatarGroupProps, AvatarSize } from './components/Avatar/Avatar';
 export { Toast, ToastRegion } from './components/Toast/Toast';
 export type { ToastProps, ToastTone } from './components/Toast/Toast';

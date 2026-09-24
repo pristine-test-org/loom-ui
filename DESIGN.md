@@ -148,6 +148,10 @@ components:
     rounded: "{rounded.lg}"
     padding: "{spacing.5}"
     shadow: "{elevation.lg}"
+  avatar:
+    backgroundColor: "{colors.accent-subtle}"
+    textColor: "{colors.accent-text}"
+    rounded: "{rounded.pill}"
   tab-selected:
     textColor: "{colors.text}"
     borderColor: "{colors.accent}"
@@ -241,6 +245,10 @@ border, toasts at `shadow-md`, dialogs at `shadow-lg`. Nothing nests shadows.
 - **Toast**: a surface with a 3px status stripe on the left, a title, an
   optional description, an optional action and a dismiss button. `ToastRegion`
   stacks them in the bottom-right corner.
+- **Avatar**: a round image, or the person's initials on `accent-subtle` when
+  there is no image or it fails to load. `sm`, `md` and `lg`, with an optional
+  presence dot. `AvatarGroup` overlaps them and collapses the rest into a
+  `+n` count.
 
 ## Do and do not
 
