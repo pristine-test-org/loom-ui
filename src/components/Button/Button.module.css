@@ -51,7 +51,7 @@
 .secondary {
   background: var(--loom-color-surface);
   border-color: var(--loom-color-border-strong);
-  color: var(--loom-color-text);
+  color: #b4b0a8;
   box-shadow: var(--loom-shadow-sm);
 }
 
