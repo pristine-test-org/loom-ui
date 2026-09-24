@@ -143,16 +143,16 @@
 [data-theme="dark"] {
   --loom-color-bg: var(--loom-neutral-950);
   --loom-color-surface: var(--loom-neutral-900);
-  --loom-color-surface-sunk: #0b0a09;
+  --loom-color-surface-sunk: var(--loom-neutral-800);
   --loom-color-text: var(--loom-neutral-50);
   --loom-color-text-muted: var(--loom-neutral-300);
   --loom-color-text-faint: var(--loom-neutral-400);
-  --loom-color-border: var(--loom-neutral-800);
-  --loom-color-border-strong: var(--loom-neutral-700);
+  --loom-color-border: var(--loom-neutral-700);
+  --loom-color-border-strong: var(--loom-neutral-600);
 
   --loom-color-accent: var(--loom-indigo-300);
   --loom-color-accent-hover: var(--loom-indigo-200);
-  --loom-color-accent-subtle: rgb(111 126 215 / 0.16);
+  --loom-color-accent-subtle: rgb(111 126 215 / 0.24);
   --loom-color-accent-text: var(--loom-indigo-200);
   --loom-color-on-accent: var(--loom-indigo-900);
   --loom-color-focus: var(--loom-indigo-300);
