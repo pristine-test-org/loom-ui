@@ -162,11 +162,13 @@ stories.
 
 ## Principles
 
-**Quiet by default.** Most of the screen is linen neutrals. Colour is for the
-one thing a person should do next and for status, never for decoration.
+**Quiet by default.** Linen neutrals fill most of the screen. Colour is kept
+for the one thing a person should do next and for status. It is never
+decoration.
 
-**One accent.** Indigo marks the primary action, the selected tab and focus.
-If two indigo buttons sit side by side, one of them should be `secondary`.
+**One accent.** Indigo marks three things: the primary action, the selected
+tab and focus. When two indigo buttons sit side by side, make one of them
+`secondary`.
 
 **Tokens, not literals.** Every colour, font size, space, radius and shadow in
 a component reads a `--loom-*` custom property. A hex value or an off-scale
@@ -244,8 +246,8 @@ border, toasts at `shadow-md`, dialogs at `shadow-lg`. Nothing nests shadows.
 
 ## Do and do not
 
-**Do** read a token for every value. **Do** put the primary action last in a
-footer. **Do** keep one accent-filled button per view. **Do** check both
+**Do** read a token for every value. **Do** place the primary action last in
+a footer. **Do** keep one accent-filled button per view. **Do** check both
 themes in Storybook before merging.
 
 **Do not** hard-code a hex value, an off-scale size or a shadow in a component.

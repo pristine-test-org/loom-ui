@@ -1,9 +1,9 @@
 # Loom UI
 
-Loom is a small React component library: eight components (Button, Card, Badge,
-Input, Select, Dialog, Tabs, Toast) built on design tokens written as CSS custom
-properties, with a light and a dark theme. There is no app here; the components
-are documented and previewed in Storybook.
+Loom is a small React component library. It ships eight components (Button,
+Card, Badge, Input, Select, Dialog, Tabs and Toast), all built on design tokens
+written as CSS custom properties, in a light and a dark theme. This repository
+has no app: Storybook is where the components are documented and previewed.
 
 Used as an Impeccable test repository.
 
@@ -19,9 +19,9 @@ bun install
 bun run storybook        # http://localhost:6006
 ```
 
-Use the Theme button in the Storybook toolbar to switch between light and dark.
-The **Foundations** pages show the palette, the type scale, spacing, radius and
-elevation, read live from `src/tokens.css`.
+Switch between light and dark with the Theme button in the Storybook toolbar.
+The **Foundations** pages read `src/tokens.css` live and show the palette, the
+type scale, spacing, radius and elevation.
 
 To build a static Storybook:
 
